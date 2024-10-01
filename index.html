@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syle.css">
+    <title>form validation</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="">
+        
+                <label for="firstname">First Name </label>
+                <input type="text" id="first-name" name="firstname"><br><br>
+                <p id="fname-error" class="error"></p>
+            
+            <div class="lname">
+            <label for="lastname">Last Name </label>    
+            <input type="text" id="last-name" name="lastname"><br><br>
+            <p id="lname-error" class="error"></p>
+            
+
+            </div>
+            <div class="pwd">
+                  
+            <label for="password">PassWord </label>
+            <input type="password" id="password" name="password"><br><br>
+            <p id="password-error" class="error"></p>
+
+            </div>
+               <button id="btn" type="submit" value="submit">SUBMIT</button>
+            
+
+        </form>
+
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
