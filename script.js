@@ -20,4 +20,25 @@ if(firstName===""){
 if(lastName==""){
     lastNameError.textContent = "please last name is required"
 }
+ // Email validation
+//  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//  if (email === '') {
+//      errorMessage.textContent = 'Email is required.';
+//      return false;
+//  } else if (!email.match(emailPattern)) {
+//      errorMessage.textContent = 'Please enter a valid email address.';
+//      return false;
+//  }
+
+ // Password validation
+ if (passWord === '') {
+    passWordError.textContent = 'Password is required.';
+     return false;
+ } else if (passWord.length < 6) {
+     passWordError.textContent = 'Password must be at least 6 characters long.';
+     return false;
+ }
+
+ alert('Form submitted successfully!');
+ return true;
 }
